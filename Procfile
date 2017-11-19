@@ -1,1 +1,1 @@
-web: gunicorn plant_tv.wsgi
+web: gunicorn planttv.wsgi
