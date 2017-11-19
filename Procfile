@@ -1,1 +1,1 @@
-web: gunicorn xyz.wsgi
+web: gunicorn plant_tv.wsgi
