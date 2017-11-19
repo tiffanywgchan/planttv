@@ -19,5 +19,9 @@ def postData(request):
 			print(pd)
 
 			return HttpResponse(status=201)
+		else:
+			print("Didn't receive analog value")
+			print(request.POST)
+			return HttpResponse(status=400)
 	else:
 		return HttpResponse('<h1>Post data to this url.</h1>')
