@@ -1,1 +1,1 @@
-web: gunicorn planttv.wsgi --logfile=-
+web: gunicorn planttv.wsgi --log-file=-
