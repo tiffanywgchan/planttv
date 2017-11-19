@@ -26,7 +26,7 @@ SECRET_KEY = 'uvl#(ws1!(xggdd$l7j#e#mapxmjt#oww@4%x@ix&88lfwcraf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
