@@ -23,3 +23,7 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^data/$', views.postData, name='postData')
 ]
+
+if not settings.DEBUG:
+    urlpatterns += patterns('',
+        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),)
