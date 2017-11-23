@@ -11,6 +11,9 @@ const int analogPin = 17;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  
   Serial.begin(9600);
   delay(100);
  
@@ -24,14 +27,18 @@ void setup() {
   WiFi.begin(ssid, password);
   
   while (WiFi.status() != WL_CONNECTED) {
+    digitalWrite(LED_BUILTIN, HIGH);
     delay(500);
+    digitalWrite(LED_BUILTIN, LOW);
     Serial.print(".");
+    delay(500);
   }
  
   Serial.println("");
   Serial.println("WiFi connected");  
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 // the loop function runs over and over again forever
