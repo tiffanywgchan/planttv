@@ -10,7 +10,7 @@ def home(request):
 	rollint_avg__max_length = 5
 	analog_values = plant_data[:rollint_avg__max_length].values_list('analog_value', flat=True)
 	current_temp = PlantData.to_temp(sum(analog_values) / len(analog_values))
-
+	
 	return render(request, 'planttv/home.html', {
 		'current_temp': current_temp,
 		'plant_data': plant_data
