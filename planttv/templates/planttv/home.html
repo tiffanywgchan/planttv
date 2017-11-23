@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<h1>Welcome to Plant.TV!</h1>
+		<h3>Current average temp: {{ current_temp }}°C</h3>
 		<ul>
 		{% for pd in plant_data %}
 			<li>{{ pd.to_display }}</li>
