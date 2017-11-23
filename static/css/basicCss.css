@@ -1,8 +1,9 @@
 /* Add style here */
 h1 {
-    color: blue;
+    color: #555599;
 }
 
 body {
-    color: lightcoral;
+    color: #EA5E5E;
+    background-color: #CCEECC;
 }

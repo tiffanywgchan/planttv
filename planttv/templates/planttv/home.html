@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/basicCss.css' %}"/>
 	</head>
 	<body>
+		<center>
 		<h1>Welcome to Plant.TV!</h1>
 		<h3>Current average temp: {{ current_temp }}°C</h3>
 		<div>
@@ -24,5 +25,6 @@
 			<li>{{ pd.to_display }}</li>
 		{% endfor %}
 		</ul-->
+		</center>
 	</body>
 </html>
