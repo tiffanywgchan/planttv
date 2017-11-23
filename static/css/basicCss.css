@@ -1,10 +1,15 @@
 /* Add style here */
 h1 {
+<<<<<<< HEAD
     color: blue;
     border: 1px solid powderblue;
     text-align: center;
+=======
+    color: #555599;
+>>>>>>> c236c85b98bde9e2d66c879ba2f072105aeadf26
 }
 
 body {
-    color: lightcoral;
+    color: #EA5E5E;
+    background-color: #CCEECC;
 }

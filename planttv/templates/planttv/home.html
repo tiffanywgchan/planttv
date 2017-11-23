@@ -5,12 +5,26 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/basicCss.css' %}"/>
 	</head>
 	<body>
+		<center>
 		<h1>Welcome to Plant.TV!</h1>
 		<h3>Current average temp: {{ current_temp }}°C</h3>
-		<ul>
-		<!--{% for pd in plant_data %}
+		<div>
+		{% if current_temp < 18 %}
+			<img style="width: 100px" src="{% static 'img/cold_plant.jpg' %}" />
+			<p>It's cold!</p>
+		{% elif current_temp < 30 %}
+			<img style="width: 100px" src="{% static 'img/happy_plant.png' %}" />
+			<p>It's nice!</p>
+		{% else %}
+			<img style="width: 100px" src="{% static 'img/hot_plant.jpg' %}" />
+			<p>It's too warm!</p>
+		{% endif %}
+		</div>
+		<!--ul>
+		{% for pd in plant_data %}
 			<li>{{ pd.to_display }}</li>
-		{% endfor %}-->
-		</ul>
+		{% endfor %}
+		</ul-->
+		</center>
 	</body>
 </html>
